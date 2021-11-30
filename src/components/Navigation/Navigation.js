@@ -1,11 +1,17 @@
 import { AppBar, IconButton, Toolbar, Typography, Button } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useState } from 'react';
+import Menu from '../Drawer/Drawer';
 
 const Navigation = () => {
+
+    const [drawer, setDrawer] = useState({
+        'right': false
+    })
+
     return (
-        <Box sx={{ flexGrow: 1}}>
-            <AppBar sx={{backgroundColor: '#333' }} position="static">
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar sx={{ backgroundColor: 'transparent' }} position="static">
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -16,11 +22,16 @@ const Navigation = () => {
                     >
                         {/* <MenuIcon /> */}
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
                         Minhazul Ashim
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button onClick={() => {
+                        setDrawer({
+                            'right': true
+                        })
+                    }}>Drawer</Button>
                 </Toolbar>
+                <Menu toggle={drawer} setToggle={setDrawer}></Menu>
             </AppBar>
         </Box>
     );

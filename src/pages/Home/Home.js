@@ -1,14 +1,15 @@
-import { Button, Container, Grid, Typography } from '@mui/material';
+import { Button, Drawer, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import hiavatar from '../../images/hi-avatar.png'
 import Typewriter from 'typewriter-effect';
+import Menu from '../../components/Drawer/Drawer';
 
 const Home = () => {
 
     return (
         <Box sx={{ py: '2%' }}>
-            <Container fluid>
+            <>
                 <Grid container>
 
                     <Grid item xs={12} md={6}>
@@ -17,7 +18,7 @@ const Home = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center' }}>
+                    <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'start' }}>
                         <Box>
                             <Typography variant='h2'>
                                 This is <span style={{ color: 'tomato' }}>Minhazul Ashim</span>
@@ -36,14 +37,21 @@ const Home = () => {
                             <Button variant='contained'>
                                 Download Resume
                             </Button>
-                            <Button sx={{ ml: '4%' }} variant='contained'>
+                            <Button sx={{
+                                ml: {
+                                    md: '4%'
+                                },
+                                mt: {
+                                    md: '2%'
+                                }
+                            }} variant='contained'>
                                 Contact Me
                             </Button>
                         </Box>
                     </Grid>
 
                 </Grid>
-            </Container>
+            </>
         </Box>
     );
 };
