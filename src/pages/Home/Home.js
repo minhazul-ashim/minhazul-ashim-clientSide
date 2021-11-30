@@ -43,7 +43,7 @@ const Home = () => {
                         </Box>
                         <Box sx={{ width: '60%', m: '5% 0' }}>
                             <Button variant='contained'>
-                                <FaDownload style={{ marginRight: '3px' }} /> <a target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
+                                <FaDownload style={{ marginRight: '3px' }} /> <a style={{ textDecoration: 'none', color: 'white' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>
                             <Button sx={{
                                 ml: {

@@ -13,7 +13,8 @@
         ],
         "clientSide": "https://github.com/minhazul-ashim/car-reign-clientSide",
         "backSide": "https://github.com/minhazul-ashim/car-reign-serverSide",
-        "preview": "https://carreign.netlify.app/"
+        "preview": "https://carreign.netlify.app/",
+        "img": "https://i.ibb.co/GkjZ2s8/Frame-1carreign.png"
     },
     {
         "name": "Travello",
@@ -28,7 +29,8 @@
         ],
         "clientSide": "https://github.com/minhazul-ashim/travello",
         "backSide": "https://github.com/minhazul-ashim/travello-serverSide",
-        "preview": "https://travellotours.netlify.app/"
+        "preview": "https://travellotours.netlify.app/",
+        "img": "https://i.ibb.co/W5CHB20/travello.png"
     },
     {
         "name": "Medico",
@@ -40,7 +42,8 @@
             "Firebase"
         ],
         "clientSide": "https://github.com/minhazul-ashim/medico-health",
-        "preview": "https://medicohealth.netlify.app/"
+        "preview": "https://medicohealth.netlify.app/",
+        "img": "https://i.ibb.co/N9vZVv3/Group-7medico.png"
     },
     {
         "name": "Edu Palace",
@@ -52,7 +55,8 @@
             "Firebase"
         ],
         "clientSide": "https://github.com/minhazul-ashim/edu-palace",
-        "preview": "https://edu-palace.netlify.app/"
+        "preview": "https://edu-palace.netlify.app/",
+        "img": "https://i.ibb.co/2n2R2Ny/edupalace.png"
     },
     {
         "name": "Red Onion",
@@ -64,6 +68,7 @@
             "Firebase"
         ],
         "clientSide": "https://github.com/minhazul-ashim/red-onion",
-        "preview": "https://carreign.netlify.app/"
+        "preview": "https://carreign.netlify.app/",
+        "img": "https://i.ibb.co/cN07GgX/redonion.png"
     }
 ]
