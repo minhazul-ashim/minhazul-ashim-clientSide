@@ -1,8 +1,11 @@
-import { Button, Drawer, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import hiavatar from '../../images/hi-avatar.png'
 import Typewriter from 'typewriter-effect';
+import Fade from 'react-reveal/Fade'
+import { FaDownload } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
 
@@ -12,9 +15,14 @@ const Home = () => {
                 <Grid container>
 
                     <Grid item xs={12} md={5}>
-                        <Box sx={{ width: '100%' }}>
-                            <img src={hiavatar} style={{ width: '100%' }} alt="" />
-                        </Box>
+
+                        <Fade left>
+                            <Box sx={{ width: '100%' }}>
+                                <img src={hiavatar} style={{ width: '100%' }} alt="" />
+                            </Box>
+                        </Fade>
+
+
                     </Grid>
 
                     <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
@@ -34,7 +42,7 @@ const Home = () => {
                         </Box>
                         <Box sx={{ width: '60%', m: '5% 0' }}>
                             <Button variant='contained'>
-                                Download Resume
+                                <FaDownload style={{ marginRight: '3px' }} /> Download Resume
                             </Button>
                             <Button sx={{
                                 ml: {
@@ -44,7 +52,7 @@ const Home = () => {
                                     md: '2%'
                                 }
                             }} variant='contained'>
-                                Contact Me
+                                <FaEnvelope style={{ marginRight: '3px' }} /> Contact Me
                             </Button>
                         </Box>
                     </Grid>

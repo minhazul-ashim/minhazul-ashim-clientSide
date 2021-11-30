@@ -2,6 +2,7 @@ import { AppBar, IconButton, Toolbar, Typography, Button } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import Menu from '../Drawer/Drawer';
+import { BiMenu } from 'react-icons/bi';
 
 const Navigation = () => {
 
@@ -22,14 +23,16 @@ const Navigation = () => {
                     >
                         {/* <MenuIcon /> */}
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center', color: 'black' }}>
                         Minhazul Ashim
                     </Typography>
                     <Button onClick={() => {
                         setDrawer({
                             'right': true
                         })
-                    }}>Drawer</Button>
+                    }}>
+                        <BiMenu style={{ fontSize: '35px', color: 'black' }} />
+                    </Button>
                 </Toolbar>
                 <Menu toggle={drawer} setToggle={setDrawer}></Menu>
             </AppBar>
