@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import hiavatar from '../../images/hi-avatar.png'
@@ -6,12 +6,13 @@ import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal/Fade'
 import { FaDownload } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa';
+import Projects from '../../components/Projects/Projects';
 
 const Home = () => {
 
     return (
-        <Box sx={{ py: '2%' }}>
-            <>
+        <>
+            <Box sx={{ pt: '2%', pb: '1%' }}>
                 <Grid container>
 
                     <Grid item xs={12} md={5}>
@@ -58,8 +59,14 @@ const Home = () => {
                     </Grid>
 
                 </Grid>
-            </>
-        </Box>
+            </Box>
+            <Container>
+                <Typography variant='h4' sx={{ textAlign: 'center', mb: '3%' }}>
+                    Some Projects
+                </Typography>
+                <Projects></Projects>
+            </Container>
+        </>
     );
 };
 

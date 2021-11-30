@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Car Reign",
+        "desc": "Website of a car importer and seller named Car Reign. It includes user dashboard and admin control of all the components. This website is developed using the MERN Stack technology",
+        "tech": [
+            "React",
+            "Express.js",
+            "React-Router",
+            "Node.js",
+            "Material-UI",
+            "MongoDB",
+            "Firebase"
+        ],
+        "clientSide": "https://github.com/minhazul-ashim/car-reign-clientSide",
+        "backSide": "https://github.com/minhazul-ashim/car-reign-serverSide",
+        "preview": "https://carreign.netlify.app/"
+    },
+    {
+        "name": "Travello",
+        "desc": "Website of a travel agency and tour planner named Travello. It includes user and admin interaction of all the components. This website is developed using the MERN Stack technology",
+        "tech": [
+            "React",
+            "Express.js",
+            "React-Router",
+            "Node.js",
+            "MongoDB",
+            "Firebase"
+        ],
+        "clientSide": "https://github.com/minhazul-ashim/travello",
+        "backSide": "https://github.com/minhazul-ashim/travello-serverSide",
+        "preview": "https://travellotours.netlify.app/"
+    },
+    {
+        "name": "Medico",
+        "desc": "Website of a health service provider named Medico. It includes user interaction and dynamic routing. This website is developed using and focusing React majorly",
+        "tech": [
+            "React",
+            "React-Router",
+            "React Bootstrap",
+            "Firebase"
+        ],
+        "clientSide": "https://github.com/minhazul-ashim/medico-health",
+        "preview": "https://medicohealth.netlify.app/"
+    },
+    {
+        "name": "Edu Palace",
+        "desc": "Website of a education service provider. It includes user interaction. This website is developed using React majorly.",
+        "tech": [
+            "React",
+            "React-Router",
+            "React Bootstrap",
+            "Firebase"
+        ],
+        "clientSide": "https://github.com/minhazul-ashim/edu-palace",
+        "preview": "https://edu-palace.netlify.app/"
+    },
+    {
+        "name": "Red Onion",
+        "desc": "Website of a restaurant. It includes user interaction, cart and order placement functionalities. This website is developed using the MERN Stack technology",
+        "tech": [
+            "React",
+            "React Bootstrap",
+            "React-Router",
+            "Firebase"
+        ],
+        "clientSide": "https://github.com/minhazul-ashim/red-onion",
+        "preview": "https://carreign.netlify.app/"
+    }
+]
