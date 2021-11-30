@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
+import Projects from './components/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Contact></Contact>
+          </Route>
+          <Route path='/projects'>
+            <Projects></Projects>
           </Route>
         </Switch>
 

@@ -52,7 +52,7 @@ export default function Menu({ toggle, setToggle }) {
                     <ListItemIcon sx={{ color: 'white' }}>
                         <FaThList />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} sx={{ color: 'white', textDecoration: 'none' }} primary={'Projects'} />
+                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid tomato' }} sx={{ color: 'white', textDecoration: 'none' }} primary={'Projects'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: 'white' }}>

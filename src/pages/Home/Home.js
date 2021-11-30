@@ -29,9 +29,9 @@ const Home = () => {
                     <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
                         <Box>
                             <Typography variant='h2'>
-                                This is <span style={{ color: 'tomato' }}>Minhazul Ashim</span>
+                                <span style={{ fontSize: '55px' }}>This is</span> <span style={{ color: 'tomato', fontWeight: '500' }}>Minhazul Ashim</span>
                             </Typography>
-                            <Typography variant='h4'>
+                            <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter
                                     options={{
                                         strings: ['A React Developer', 'A MERN Stack Developer', 'A Tech Enthusiast'],
@@ -41,18 +41,11 @@ const Home = () => {
                                 />
                             </Typography>
                         </Box>
-                        <Box sx={{ width: '60%', m: '5% 0' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', width: '50%', my: '4%' }}>
                             <Button variant='contained'>
                                 <FaDownload style={{ marginRight: '3px' }} /> <a style={{ textDecoration: 'none', color: 'white' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>
-                            <Button sx={{
-                                ml: {
-                                    md: '4%'
-                                },
-                                mt: {
-                                    md: '2%'
-                                }
-                            }} variant='contained'>
+                            <Button sx={{ mt: '3%', background: '#00a873' }} variant='contained'>
                                 <FaEnvelope style={{ marginRight: '3px' }} /> Contact Me
                             </Button>
                         </Box>
