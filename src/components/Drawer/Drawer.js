@@ -34,31 +34,33 @@ export default function Menu({ toggle, setToggle }) {
                     <ListItemIcon sx={{ color: 'white' }}>
                         <FaHome />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/home' primary={'Home'} />
+                    <ListItemText activeStyle={{ borderBottom: '1px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/home' primary={'Home'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: 'white' }}>
                         <RiQuestionnaireFill />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/about' primary={'About Me'} />
+                    <ListItemText activeStyle={{ borderBottom: '1px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/about' primary={'About Me'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: 'white' }}>
                         <FaLocationArrow />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/contact' primary={'Contact'} />
+                    <ListItemText activeStyle={{ borderBottom: '1px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: 'white' }}>
                         <FaThList />
                     </ListItemIcon>
-                    <ListItemText primary={'Projects'} />
+                    <ListItemText activeStyle={{ borderBottom: '1px solid tomato' }} sx={{ color: 'white', textDecoration: 'none' }} primary={'Projects'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: 'white' }}>
                         <FiDownload />
                     </ListItemIcon>
-                    <ListItemText primary={'Download Resume'} />
+                    <ListItemText>
+                        <a style={{ color: 'white', textDecoration: 'none' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Download Resume</a>
+                    </ListItemText>
                 </ListItem>
             </List>
         </Box>

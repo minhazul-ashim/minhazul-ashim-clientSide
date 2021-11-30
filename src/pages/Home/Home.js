@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal/Fade'
 import { FaDownload } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -42,7 +43,7 @@ const Home = () => {
                         </Box>
                         <Box sx={{ width: '60%', m: '5% 0' }}>
                             <Button variant='contained'>
-                                <FaDownload style={{ marginRight: '3px' }} /> Download Resume
+                                <FaDownload style={{ marginRight: '3px' }} /> <a target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>
                             <Button sx={{
                                 ml: {
