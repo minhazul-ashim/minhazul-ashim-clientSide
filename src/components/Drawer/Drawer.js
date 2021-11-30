@@ -1,25 +1,16 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import { RiQuestionnaireFill } from 'react-icons/ri'
+import { FaLocationArrow } from 'react-icons/fa'
+import { FaThList } from 'react-icons/fa'
+import { FiDownload } from 'react-icons/fi'
 
 export default function Menu({ toggle, setToggle }) {
-
-    console.log(toggle, setToggle)
-
-    // const [state, setState] = React.useState({
-    //     top: false,
-    //     left: false,
-    //     bottom: false,
-    //     right: false,
-    // });
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -31,38 +22,51 @@ export default function Menu({ toggle, setToggle }) {
 
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, background: '#333', height: '100vh', color: 'white' }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['About', 'Contact', 'Download Resume', 'Projects'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
+                <ListItem button>
+                    <ListItemIcon sx={{color: 'white'}}>
+                        <RiQuestionnaireFill />
+                    </ListItemIcon>
+                    <ListItemText primary={'About Me'} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon sx={{color: 'white'}}>
+                        <FaLocationArrow />
+                    </ListItemIcon>
+                    <ListItemText primary={'Contact'} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon sx={{color: 'white'}}>
+                        <FaThList />
+                    </ListItemIcon>
+                    <ListItemText primary={'Projects'} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon sx={{color: 'white'}}>
+                        <FiDownload />
+                    </ListItemIcon>
+                    <ListItemText primary={'Download Resume'} />
+                </ListItem>
             </List>
         </Box>
     );
 
     return (
         <div>
-            {['right'].map((anchor) => (
-                <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-                    <Drawer
-                        anchor={anchor}
-                        open={toggle[anchor]}
-                        onClose={toggleDrawer(anchor, false)}
-                    >
-                        {list(anchor)}
-                    </Drawer>
-                </React.Fragment>
-            ))}
+            <React.Fragment key={'right'}>
+                <Drawer
+                    anchor={'right'}
+                    open={toggle['right']}
+                    onClose={toggleDrawer('right', false)}
+                >
+                    {list('right')}
+                </Drawer>
+            </React.Fragment>
         </div>
     );
 }

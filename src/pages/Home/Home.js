@@ -3,7 +3,6 @@ import { Box } from '@mui/system';
 import React from 'react';
 import hiavatar from '../../images/hi-avatar.png'
 import Typewriter from 'typewriter-effect';
-import Menu from '../../components/Drawer/Drawer';
 
 const Home = () => {
 
@@ -12,13 +11,13 @@ const Home = () => {
             <>
                 <Grid container>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={5}>
                         <Box sx={{ width: '100%' }}>
-                            <img src={hiavatar} style={{ width: '90%' }} alt="" />
+                            <img src={hiavatar} style={{ width: '100%' }} alt="" />
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'start' }}>
+                    <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
                         <Box>
                             <Typography variant='h2'>
                                 This is <span style={{ color: 'tomato' }}>Minhazul Ashim</span>
