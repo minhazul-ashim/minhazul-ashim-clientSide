@@ -6,7 +6,6 @@ import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal/Fade'
 import { FaDownload } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
 

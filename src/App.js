@@ -7,28 +7,28 @@ import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navigation></Navigation>
+      <div className="App">
 
-        <Switch>
+        <BrowserRouter>
+          <Navigation></Navigation>
+          <Switch>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/about'>
+              <About></About>
+            </Route>
+            <Route path='/contact'>
+              <Contact></Contact>
+            </Route>
+          </Switch>
 
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/about'>
-            <About></About>
-          </Route>
-          <Route path='/contact'>
-            <Contact></Contact>
-          </Route>
-        </Switch>
+        </BrowserRouter>
+      </div>
 
-      </BrowserRouter>
-    </div>
   );
 }
 
