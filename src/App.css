@@ -3,3 +3,8 @@
     color: 'white';
     text-decoration: 'none';
 }
+
+.app {
+
+    z-index: 999;
+}

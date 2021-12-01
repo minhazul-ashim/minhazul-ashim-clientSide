@@ -9,7 +9,6 @@ import Home from './pages/Home/Home';
 function App() {
   return (
     <div className="App">
-
       <BrowserRouter>
         <Navigation></Navigation>
         <Switch>
@@ -32,7 +31,6 @@ function App() {
 
       </BrowserRouter>
     </div>
-
   );
 }
 

@@ -48,10 +48,10 @@ const Contact = () => {
                         aria-label="minimum height"
                         minRows={8}
                         placeholder="Your Message"
-                        style={{ width: 200 }} name='message'
+                        style={{ width: '100%' }} name='message'
                     />
 
-                    <Button variant='contained' sx={{ display: 'block' }} type='submit'>
+                    <Button variant='contained' sx={{ display: 'block', backgroundColor: 'tomato' }} type='submit'>
                         Send Email
                     </Button>
                 </form>

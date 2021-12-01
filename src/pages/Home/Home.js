@@ -42,7 +42,10 @@ const Home = () => {
                             </Typography>
                         </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'column', width: '50%', my: '4%' }}>
-                            <Button variant='contained'>
+                            <Button variant='contained' sx={{
+                                backgroundColor
+                                    : 'tomato'
+                            }}>
                                 <FaDownload style={{ marginRight: '3px' }} /> <a style={{ textDecoration: 'none', color: 'white' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>
                             <Button sx={{ mt: '3%', background: '#00a873' }} variant='contained'>
