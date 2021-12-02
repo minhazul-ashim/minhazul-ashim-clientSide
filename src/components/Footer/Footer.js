@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <Box sx={{ color: '#ffffff', textAlign: 'center', padding: '8% 0 1% 0' }} >
             <Container>
-                <Typography>
+                <Typography variant='body'>
                     All Rights Reserved. &copy; Minhazul Ashim | 2021
                 </Typography>
             </Container>

@@ -34,7 +34,7 @@ const Home = () => {
                             <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter
                                     options={{
-                                        strings: ['A React Developer', 'A MERN Stack Developer', 'A Tech Enthusiast'],
+                                        strings: ['React Developer', 'MERN Stack Developer', 'Tech Enthusiast'],
                                         autoStart: true,
                                         loop: true,
                                     }}
@@ -57,7 +57,7 @@ const Home = () => {
                 </Grid>
             </Box>
             <Container>
-                <Typography variant='h4' sx={{ textAlign: 'center', mb: '3%', color: 'white' }}>
+                <Typography className='section-title' variant='h4' sx={{ textAlign: 'center', mb: '3%', color: 'white' }}>
                     Some Projects
                 </Typography>
                 <Projects home={true}></Projects>
