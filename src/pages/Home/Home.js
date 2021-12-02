@@ -19,7 +19,7 @@ const Home = () => {
 
                         <Fade left>
                             <Box sx={{ width: '100%' }}>
-                                <img src={hiavatar} style={{ width: '80%' }} alt="" />
+                                <img className='banner-img' src={hiavatar} alt="" />
                             </Box>
                         </Fade>
 
@@ -29,11 +29,13 @@ const Home = () => {
                     <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
                         <Box>
                             <Typography variant='h2'>
-                                <span style={{ fontSize: {
-                                    lg: '55px',
-                                    md: '45px',
-                                    sx: '38px'
-                                }, color: 'white' }}>This is</span> <span style={{ color: '#FE915E', fontWeight: '500' }}>Minhazul Ashim</span>
+                                <span style={{
+                                    fontSize: {
+                                        lg: '55px',
+                                        md: '45px',
+                                        sx: '38px'
+                                    }, color: 'white'
+                                }}>This is</span> <span style={{ color: '#FE915E', fontWeight: '500' }}>Minhazul Ashim</span>
                             </Typography>
                             <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter

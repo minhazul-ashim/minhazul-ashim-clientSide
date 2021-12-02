@@ -40,7 +40,7 @@ const particle_config = {
             random: true,
             anim: {
                 enable: false,
-                speed: 4,
+                speed: 10,
                 size_min: 0.3,
                 sync: false
             }

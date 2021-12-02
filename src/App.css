@@ -9,6 +9,11 @@ body {
     text-decoration: 'none';
 }
 
+.banner-img {
+
+    width: 90%;
+}
+
 .section-title {
 
     position: relative;
@@ -26,9 +31,26 @@ body {
     background-color: #FE915E;
 }
 
-@media only screen and (max-width: '600px') {
+@media only screen and (max-width: 600px) {
     
     html {
-        font-size: 70%;
+        font-size: 60%;
+    }
+
+    .banner-img {
+
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    html {
+        font-size: 75%;
+    }
+
+    .banner-img {
+
+        width: 70%;
     }
 }
