@@ -12,7 +12,6 @@ import { FiDownload } from 'react-icons/fi'
 import { NavLink } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa'
 import { BsFacebook, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
-import { Divider } from '@mui/material';
 
 export default function Menu({ toggle, setToggle }) {
 
@@ -36,25 +35,25 @@ export default function Menu({ toggle, setToggle }) {
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaHome />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/home' primary={'Home'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #00a873' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/home' primary={'Home'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <RiQuestionnaireFill />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/about' primary={'About Me'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #00a873' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/about' primary={'About Me'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaLocationArrow />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #00a873' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaThList />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid #FE915E' }} sx={{ color: '#999', textDecoration: 'none' }} primary={'Projects'} />
+                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid #00a873' }} sx={{ color: '#999', textDecoration: 'none' }} primary={'Projects'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
