@@ -8,7 +8,6 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import ParticleBackground from './Particles/ParticleBackground';
 import ScrollToTop from "react-scroll-to-top";
-import { FaArrowAltCircleUp } from 'react-icons/fa'
 
 
 function App() {

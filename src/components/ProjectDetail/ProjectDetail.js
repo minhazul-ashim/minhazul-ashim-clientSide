@@ -73,7 +73,7 @@ const ProjectDetail = ({ data, state, setState }) => {
                             Technolgies Used:
                         </Typography>
 
-                        <List sx={{ display: 'flex', mb: '3%' }}>
+                        <List sx={{ display: 'flex', mb: '3%', flexWrap: 'wrap' }}>
                             {
                                 tech.map(el => {
                                     return (
