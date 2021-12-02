@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import { TextareaAutosize } from '@mui/base';
 import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
+import Typewriter from 'typewriter-effect';
 
 
 const Contact = () => {
@@ -26,9 +27,15 @@ const Contact = () => {
         <Container sx={{ py: '4%' }}>
             <Box>
                 <Typography variant='h4' sx={{
-                    textAlign: 'center'
+                    textAlign: 'center', color: '#999'
                 }}>
-                    Let's do something great! Send me an Email
+                    <Typewriter
+                        options={{
+                            strings: ['Let\'s get in touch. Email me'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
                 </Typography>
             </Box>
 
@@ -38,13 +45,13 @@ const Contact = () => {
 
                 <form ref={form} onSubmit={sendEmail}>
 
-                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Email" variant="filled" name='email' />
+                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '2%' }} label="Email" variant="filled" name='email' />
 
-                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Your Name" variant="filled" name='name' />
+                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '2%' }} label="Your Name" variant="filled" name='name' />
 
-                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Subject" variant="filled" name='subject' />
+                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '5%' }} label="Subject" variant="filled" name='subject' />
 
-                    <TextareaAutosize></TextareaAutosize>
+                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '5%' }} label="Message" variant="outlined" name='message' />
 
                     <Button variant='contained' sx={{ display: 'block', backgroundColor: 'tomato' }} type='submit'>
                         Send Email

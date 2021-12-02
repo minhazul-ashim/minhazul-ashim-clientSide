@@ -15,7 +15,7 @@ function App() {
     <div className="App">
 
 
-      <ParticleBackground></ParticleBackground>
+      <ParticleBackground style={{ zIndex: '-999' }}></ParticleBackground>
 
       <BrowserRouter>
         <Navigation></Navigation>
