@@ -7,6 +7,8 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import ParticleBackground from './Particles/ParticleBackground';
+import ScrollToTop from "react-scroll-to-top";
+import { FaArrowAltCircleUp } from 'react-icons/fa'
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
             <Projects></Projects>
           </Route>
         </Switch>
+        <ScrollToTop smooth color='#222' />
         <Footer></Footer>
       </BrowserRouter>
     </div>
