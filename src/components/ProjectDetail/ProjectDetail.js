@@ -10,7 +10,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 import { Button, Grid } from '@mui/material';
 import { Box } from '@mui/system';
-import { Link } from 'react-router-dom';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -36,15 +35,15 @@ const ProjectDetail = ({ data, state, setState }) => {
 
                     <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
 
-                        <CloseIcon onClick={handleClose} sx={{ fontSize: '30px', color: 'red', opacity: '0.6' }}></CloseIcon>
-
                         <Button variant='outlined'>
-                            <a style={{
+                            <a target='__blank' style={{
                                 textDecoration: 'none', color: '#999'
                             }} href="https://github.com/minhazul-ashim">
                                 Follow Me
                             </a>
                         </Button>
+
+                        <CloseIcon onClick={handleClose} sx={{ fontSize: '30px', color: 'white', opacity: '0.6', border: '1px solid white' }}></CloseIcon>
 
                     </Toolbar>
 
