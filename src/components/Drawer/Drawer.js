@@ -34,25 +34,25 @@ export default function Menu({ toggle, setToggle }) {
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaHome />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/home' primary={'Home'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/home' primary={'Home'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <RiQuestionnaireFill />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/about' primary={'About Me'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/about' primary={'About Me'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaLocationArrow />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid #FE915E' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>
                         <FaThList />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid tomato' }} sx={{ color: '#999', textDecoration: 'none' }} primary={'Projects'} />
+                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid #FE915E' }} sx={{ color: '#999', textDecoration: 'none' }} primary={'Projects'} />
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon sx={{ color: '#999' }}>

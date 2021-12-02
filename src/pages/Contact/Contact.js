@@ -23,14 +23,14 @@ const Contact = () => {
     };
 
     return (
-        <Container sx={{ py: '5%' }}>
+        <Container sx={{ p: '9% 0 5% 0' }}>
             <Box>
                 <Typography variant='h4' sx={{
                     textAlign: 'center', color: '#999'
                 }}>
                     <Typewriter
                         options={{
-                            strings: ['Let\'s get in touch. Email me'],
+                            strings: ['Let\'s get in touch.', 'We will something amazing!', 'Email me'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -52,7 +52,7 @@ const Contact = () => {
 
                     <TextField sx={{ display: 'block', background: '#ffffff', mb: '5%' }} label="Message" variant="outlined" name='message' />
 
-                    <Button variant='contained' sx={{ display: 'block', backgroundColor: 'tomato' }} type='submit'>
+                    <Button variant='contained' sx={{ display: 'block', backgroundColor: '#FE915E' }} type='submit'>
                         Send Email
                     </Button>
                 </form>

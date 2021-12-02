@@ -29,7 +29,11 @@ const Home = () => {
                     <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
                         <Box>
                             <Typography variant='h2'>
-                                <span style={{ fontSize: '3.4rem', color: 'white' }}>This is</span> <span style={{ color: 'tomato', fontWeight: '500' }}>Minhazul Ashim</span>
+                                <span style={{ fontSize: {
+                                    lg: '55px',
+                                    md: '45px',
+                                    sx: '38px'
+                                }, color: 'white' }}>This is</span> <span style={{ color: '#FE915E', fontWeight: '500' }}>Minhazul Ashim</span>
                             </Typography>
                             <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter
@@ -44,7 +48,7 @@ const Home = () => {
                         <Box sx={{ display: 'flex', flexDirection: 'column', width: '50%', my: '4%' }}>
                             <Button variant='contained' sx={{
                                 backgroundColor
-                                    : 'tomato'
+                                    : '#FE915E'
                             }}>
                                 <FaDownload style={{ marginRight: '3px' }} /> <a style={{ textDecoration: 'none', color: 'white' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>

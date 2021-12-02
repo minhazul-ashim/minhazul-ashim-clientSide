@@ -8,7 +8,7 @@ const particle_config = {
             }
         },
         color: {
-            value: "#ff6347"
+            value: "#00a873"
         },
         shape: {
             type: "polygon",
@@ -36,7 +36,7 @@ const particle_config = {
             }
         },
         size: {
-            value: 2,
+            value: 3,
             random: true,
             anim: {
                 enable: false,
