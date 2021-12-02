@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
-import ProjectBox from '../../ProjectBox.js/ProjectBox';
+import ProjectBox from '../ProjectBox.js/ProjectBox';
 
 const Projects = ({ home }) => {
 
@@ -13,7 +13,6 @@ const Projects = ({ home }) => {
             .then(res => res.json())
             .then(data => {
                 setProjects(data)
-                console.log(data)
             })
 
     }, [])
