@@ -25,7 +25,7 @@ const ProjectBox = ({ data }) => {
                     <Typography textAlign='justify' display='block' my={2} variant='body'>
                         {desc.slice(0, 150)}...
                     </Typography>
-                    <Button variant='outlined' sx={{ color: 'white' }}>
+                    <Button variant='outlined' sx={{ color: 'white', borderColor: '#00a873' }}>
                         View Detail
                     </Button>
                 </Paper>

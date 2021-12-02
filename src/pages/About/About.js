@@ -9,8 +9,8 @@ const About = () => {
             <Box sx={{ width: '50%' }}>
                 <img style={{ width: '100%' }} src={thumbsup} alt="" />
             </Box>
-            <Box sx={{color: '#999'}}>
-                <Typography variant='h4' sx={{ textAlign: 'center', my: '3%', textDecoration: 'underline' }}>
+            <Box sx={{ color: '#999' }}>
+                <Typography variant='h4' sx={{ textAlign: 'center', my: '6%' }}>
                     Md. Minhazul Haque
                 </Typography>
                 <Typography variant='body' sx={{ display: 'block', mb: '2%', textAlign: 'justify', fontSize: '20px' }}>
