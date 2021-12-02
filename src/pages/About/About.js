@@ -9,7 +9,7 @@ const About = () => {
             <Box sx={{ width: '50%' }}>
                 <img style={{ width: '100%' }} src={thumbsup} alt="" />
             </Box>
-            <Box>
+            <Box sx={{color: '#999'}}>
                 <Typography variant='h4' sx={{ textAlign: 'center', my: '3%', textDecoration: 'underline' }}>
                     Md. Minhazul Haque
                 </Typography>

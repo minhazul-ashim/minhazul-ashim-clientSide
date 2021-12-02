@@ -24,42 +24,42 @@ export default function Menu({ toggle, setToggle }) {
 
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, background: '#333', height: '100vh', color: 'white' }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, background: '#333', height: '100vh', color: '#999' }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
                 <ListItem button>
-                    <ListItemIcon sx={{ color: 'white' }}>
+                    <ListItemIcon sx={{ color: '#999' }}>
                         <FaHome />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/home' primary={'Home'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/home' primary={'Home'} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon sx={{ color: 'white' }}>
+                    <ListItemIcon sx={{ color: '#999' }}>
                         <RiQuestionnaireFill />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/about' primary={'About Me'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/about' primary={'About Me'} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon sx={{ color: 'white' }}>
+                    <ListItemIcon sx={{ color: '#999' }}>
                         <FaLocationArrow />
                     </ListItemIcon>
-                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: 'white', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
+                    <ListItemText activeStyle={{ borderBottom: '2px solid tomato' }} as={NavLink} sx={{ color: '#999', textDecoration: 'none' }} to='/contact' primary={'Contact'} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon sx={{ color: 'white' }}>
+                    <ListItemIcon sx={{ color: '#999' }}>
                         <FaThList />
                     </ListItemIcon>
-                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid tomato' }} sx={{ color: 'white', textDecoration: 'none' }} primary={'Projects'} />
+                    <ListItemText as={NavLink} to='/projects' activeStyle={{ borderBottom: '2px solid tomato' }} sx={{ color: '#999', textDecoration: 'none' }} primary={'Projects'} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemIcon sx={{ color: 'white' }}>
+                    <ListItemIcon sx={{ color: '#999' }}>
                         <FiDownload />
                     </ListItemIcon>
                     <ListItemText>
-                        <a style={{ color: 'white', textDecoration: 'none' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Download Resume</a>
+                        <a style={{ color: '#999', textDecoration: 'none' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Download Resume</a>
                     </ListItemText>
                 </ListItem>
             </List>

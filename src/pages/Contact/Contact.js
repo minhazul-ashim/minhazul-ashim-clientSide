@@ -38,18 +38,13 @@ const Contact = () => {
 
                 <form ref={form} onSubmit={sendEmail}>
 
-                    <TextField sx={{ display: 'block' }} label="Email" variant="filled" name='email' />
+                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Email" variant="filled" name='email' />
 
-                    <TextField sx={{ display: 'block' }} label="Your Name" variant="filled" name='name' />
+                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Your Name" variant="filled" name='name' />
 
-                    <TextField sx={{ display: 'block' }} label="Subject" variant="filled" name='subject' />
+                    <TextField sx={{ display: 'block', background: '#ffffff' }} label="Subject" variant="filled" name='subject' />
 
-                    <TextareaAutosize
-                        aria-label="minimum height"
-                        minRows={8}
-                        placeholder="Your Message"
-                        style={{ width: '100%' }} name='message'
-                    />
+                    <TextareaAutosize></TextareaAutosize>
 
                     <Button variant='contained' sx={{ display: 'block', backgroundColor: 'tomato' }} type='submit'>
                         Send Email

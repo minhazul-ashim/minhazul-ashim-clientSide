@@ -29,7 +29,7 @@ const Home = () => {
                     <Grid item xs={12} md={7} sx={{ display: 'flex', flexDirection: ' column', justifyContent: 'center', p: '5%' }}>
                         <Box>
                             <Typography variant='h2'>
-                                <span style={{ fontSize: '55px' }}>This is</span> <span style={{ color: 'tomato', fontWeight: '500' }}>Minhazul Ashim</span>
+                                <span style={{ fontSize: '3.4rem', color: 'white' }}>This is</span> <span style={{ color: 'tomato', fontWeight: '500' }}>Minhazul Ashim</span>
                             </Typography>
                             <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter
@@ -57,7 +57,7 @@ const Home = () => {
                 </Grid>
             </Box>
             <Container>
-                <Typography variant='h4' sx={{ textAlign: 'center', mb: '3%' }}>
+                <Typography variant='h4' sx={{ textAlign: 'center', mb: '3%', color: 'white' }}>
                     Some Projects
                 </Typography>
                 <Projects></Projects>

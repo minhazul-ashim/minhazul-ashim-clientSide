@@ -23,7 +23,7 @@ const Navigation = () => {
                     >
                         {/* <MenuIcon /> */}
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center', color: 'black' }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center', color: '#999' }}>
                         Minhazul Ashim
                     </Typography>
                     <Button onClick={() => {
@@ -31,7 +31,7 @@ const Navigation = () => {
                             'right': true
                         })
                     }}>
-                        <BiMenu style={{ fontSize: '35px', color: 'black' }} />
+                        <BiMenu style={{ fontSize: '35px', color: '#999' }} />
                     </Button>
                 </Toolbar>
                 <Menu toggle={drawer} setToggle={setDrawer}></Menu>

@@ -13,7 +13,7 @@ const ProjectBox = ({ data }) => {
 
             <LightSpeed right>
 
-                <Paper elevation={0} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <Paper elevation={0} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#999' }}>
 
                     <Box sx={{ width: '60%', my: '3%' }}>
                         <img src={img} style={{ width: '100%' }} alt="" />
@@ -25,7 +25,7 @@ const ProjectBox = ({ data }) => {
                     <Typography textAlign='justify' display='block' my={2} variant='body'>
                         {desc.slice(0, 150)}...
                     </Typography>
-                    <Button variant='outlined'>
+                    <Button variant='outlined' sx={{ color: 'white' }}>
                         View Detail
                     </Button>
                 </Paper>
