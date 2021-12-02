@@ -38,7 +38,7 @@ function App() {
             <Projects></Projects>
           </Route>
         </Switch>
-        <ScrollToTop smooth color='#222' />
+        <ScrollToTop smooth color='#999' style={{ backgroundColor: '#444' }} />
         <Footer></Footer>
       </BrowserRouter>
     </div>
