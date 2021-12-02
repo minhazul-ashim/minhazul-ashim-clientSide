@@ -1,6 +1,5 @@
 import { Button, Container, TextField, Typography } from '@mui/material';
 import React, { useRef } from 'react';
-import { TextareaAutosize } from '@mui/base';
 import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
 import Typewriter from 'typewriter-effect';
@@ -24,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <Container sx={{ py: '4%' }}>
+        <Container sx={{ py: '5%' }}>
             <Box>
                 <Typography variant='h4' sx={{
                     textAlign: 'center', color: '#999'
