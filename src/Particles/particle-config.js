@@ -8,7 +8,7 @@ const particle_config = {
             }
         },
         color: {
-            value: "#ffa400"
+            value: "#ff6347"
         },
         shape: {
             type: "polygon",

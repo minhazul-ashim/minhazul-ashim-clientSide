@@ -12,7 +12,7 @@ const Navigation = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar sx={{ backgroundColor: 'transparent' }} position="static">
+            <AppBar sx={{ backgroundColor: '#333' }} position="static">
                 <Toolbar>
                     <IconButton
                         size="large"
