@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import ProjectBox from '../../ProjectBox.js/ProjectBox';
 
-const Projects = () => {
+const Projects = ({ home }) => {
 
     const [projects, setProjects] = useState([]);
 
@@ -21,13 +21,23 @@ const Projects = () => {
     return (
         <Box>
             <Grid mx='auto' container xs={8} md={12}>
+
                 {
-                    projects.map(project => {
-                        return (
-                            <ProjectBox data={project} key={project.name}></ProjectBox>
-                        )
-                    })
+                    !home ?
+                        projects.map(project => {
+                            return (
+                                <ProjectBox data={project} key={project.name}></ProjectBox>
+                            )
+                        })
+                        :
+                        projects.slice(0, 4).map(project => {
+                            return (
+                                <ProjectBox data={project} key={project.name}></ProjectBox>
+                            )
+                        })
+
                 }
+
             </Grid>
         </Box>
     );

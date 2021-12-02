@@ -19,7 +19,7 @@ const Home = () => {
 
                         <Fade left>
                             <Box sx={{ width: '100%' }}>
-                                <img src={hiavatar} style={{ width: '100%' }} alt="" />
+                                <img src={hiavatar} style={{ width: '80%' }} alt="" />
                             </Box>
                         </Fade>
 
@@ -60,7 +60,7 @@ const Home = () => {
                 <Typography variant='h4' sx={{ textAlign: 'center', mb: '3%', color: 'white' }}>
                     Some Projects
                 </Typography>
-                <Projects></Projects>
+                <Projects home={true}></Projects>
             </Container>
         </>
     );
