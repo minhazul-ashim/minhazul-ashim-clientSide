@@ -11,6 +11,8 @@ import { FaThList } from 'react-icons/fa'
 import { FiDownload } from 'react-icons/fi'
 import { NavLink } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa'
+import { BsFacebook, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { Divider } from '@mui/material';
 
 export default function Menu({ toggle, setToggle }) {
 
@@ -24,7 +26,7 @@ export default function Menu({ toggle, setToggle }) {
 
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, background: '#333', height: '100vh', color: '#999' }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, background: '#333', height: '100vh', color: '#999', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
@@ -63,6 +65,20 @@ export default function Menu({ toggle, setToggle }) {
                     </ListItemText>
                 </ListItem>
             </List>
+            <Box sx={{ display: 'flex', justifyContent: 'space-around', borderTop: '1px solid #999', py: '4%' }}>
+                <a target='__blank' style={{color: '#999'}} href="https://github.com/minhazul-ashim">
+                    <BsGithub style={{ fontSize: '20px' }} />
+                </a>
+                <a target='__blank' style={{color: '#999'}} href="https://facebook.com/minhazulhaque.ashim">
+                    <BsFacebook style={{ fontSize: '20px' }} />
+                </a>
+                <a target='__blank' style={{color: '#999'}} href="https://twitter.com/">
+                    <BsTwitter style={{ fontSize: '20px' }} />
+                </a>
+                <a target='__blank' style={{color: '#999'}} href="https://linkedin.com/in/minhazulhaqueashim">
+                    <BsLinkedin style={{ fontSize: '20px' }} />
+                </a>
+            </Box>
         </Box>
     );
 

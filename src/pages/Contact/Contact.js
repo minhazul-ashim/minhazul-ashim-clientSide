@@ -30,7 +30,7 @@ const Contact = () => {
                 }}>
                     <Typewriter
                         options={{
-                            strings: ['Let\'s get in touch.', 'We will something amazing!', 'Email me'],
+                            strings: ['Let\'s get in touch.', 'We will do something amazing!!!', 'Email me'],
                             autoStart: true,
                             loop: true,
                         }}

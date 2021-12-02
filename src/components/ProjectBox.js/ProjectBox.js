@@ -7,7 +7,7 @@ import ProjectDetail from '../ProjectDetail/ProjectDetail';
 
 const ProjectBox = ({ data }) => {
 
-    const { img, name, desc, clientSide, backSide, tech, preview } = data;
+    const { img, name, desc } = data;
 
     const [openDetail, setOpenDetail] = useState(false)
 
