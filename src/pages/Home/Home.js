@@ -36,7 +36,10 @@ const Home = () => {
                                         md: '45px',
                                         sx: '38px'
                                     }, color: 'white'
-                                }}>This is</span> <span style={{ color: '#FE915E', fontWeight: '500' }}>Minhazul Ashim</span>
+                                }}>This is</span> <span style={{
+                                    color: `	
+                                    #ab66ca`, fontWeight: '500'
+                                }}>Minhazul Ashim</span>
                             </Typography>
                             <Typography variant='h4' sx={{ my: '3%', color: '#00a873', fontWeight: '500' }}>
                                 <Typewriter
@@ -48,10 +51,11 @@ const Home = () => {
                                 />
                             </Typography>
                         </Box>
+                        
                         <Box sx={{ display: 'flex', flexDirection: 'column', width: '50%', my: '4%' }}>
                             <Button variant='contained' sx={{
                                 backgroundColor
-                                    : '#FE915E'
+                                    : '#ab66ca'
                             }}>
                                 <FaDownload style={{ marginRight: '3px' }} /> <a style={{ textDecoration: 'none', color: 'white' }} target='__blank' href="https://drive.google.com/file/d/1tRSbhdEz2FFiTCnXoenXUFN1lyV3kXec/view?usp=sharing">Resume</a>
                             </Button>

@@ -4,7 +4,7 @@ import React from 'react';
 import thumbsup from '../../images/thumb-up-avatar..png'
 import Slide from 'react-reveal/Slide';
 import Flash from 'react-reveal/Flash';
-
+import { FaGraduationCap, FaAward } from 'react-icons/fa'
 
 const About = () => {
     return (
@@ -49,7 +49,7 @@ const About = () => {
                 <Grid item xs={12} md={6}>
 
                     <Typography variant='h4' sx={{ my: '4%' }}>
-                        Education
+                        <FaGraduationCap /> Education
                     </Typography>
                     <List sx={{ paddingLeft: '5%', borderLeft: '1px solid grey' }}>
                         <Slide right>
@@ -96,7 +96,7 @@ const About = () => {
                 <Grid item xs={12} md={6}>
 
                     <Typography variant='h4' sx={{ my: '4%' }}>
-                        Awards & Certifications
+                        <FaAward /> Awards & Certifications
                     </Typography>
 
                     <List sx={{ paddingLeft: '5%', borderLeft: '1px solid grey' }}>

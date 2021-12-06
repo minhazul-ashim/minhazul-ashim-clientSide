@@ -4,7 +4,8 @@ import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
 import Typewriter from 'typewriter-effect';
 import img from '../../images/64653.jpg'
-import { BsFacebook, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsFacebook, BsTwitter, BsLinkedin, BsGithub, BsFillTelephoneOutboundFill } from 'react-icons/bs'
+import {GoLocation} from 'react-icons/go'
 
 const Contact = () => {
 
@@ -60,7 +61,7 @@ const Contact = () => {
 
                             </textarea>
 
-                            <Button variant='contained' sx={{ display: 'block', backgroundColor: '#FE915E' }} type='submit'>
+                            <Button variant='contained' sx={{ display: 'block', backgroundColor: '#ab66ca' }} type='submit'>
                                 Send Email
                             </Button>
                         </form>
@@ -78,11 +79,11 @@ const Contact = () => {
                     </Typography>
 
                     <Typography variant='h6'>
-                        Address: Nandir Haat, Hathazari, Chittagong-4330, Bangladesh
+                       <GoLocation/> Address: Nandir Haat, Hathazari, Chittagong-4330, Bangladesh
                     </Typography>
 
                     <Typography variant='h6'>
-                        Phone: (+880)1620268721
+                      <BsFillTelephoneOutboundFill/>  Phone: (+880)1620268721
                     </Typography>
 
                 </Grid>
