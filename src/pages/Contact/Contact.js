@@ -1,9 +1,9 @@
-import { Button, Container, TextField, Typography } from '@mui/material';
+import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useRef } from 'react';
 import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
 import Typewriter from 'typewriter-effect';
-
+import img from '../../images/64653.jpg'
 
 const Contact = () => {
 
@@ -24,40 +24,51 @@ const Contact = () => {
 
     return (
         <Container sx={{ p: '9% 0 5% 0' }}>
-            <Box>
-                <Typography variant='h4' sx={{
-                    textAlign: 'center', color: '#999'
-                }}>
-                    <Typewriter
-                        options={{
-                            strings: ['Let\'s get in touch.', 'We will do something amazing!!!', 'Email me'],
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    />
-                </Typography>
-            </Box>
+            <Grid container>
 
-            <Box sx={{
-                display: 'flex', justifyContent: 'center', p: '5%'
-            }}>
+                <Grid item xs={12} md={6}>
+                    <img src={img} style={{ width: '100%', borderRadius: '5px' }} alt="" />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Box>
+                        <Typography variant='h4' sx={{
+                            textAlign: 'center', color: '#999', mt: {
+                                xs: '2%',
+                                md: '0%'
+                            }
+                        }}>
+                            <Typewriter
+                                options={{
+                                    strings: ['Let\'s get in touch.', 'We will do something amazing!!!', 'Email me'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </Typography>
+                    </Box>
+                    <Box sx={{
+                        display: 'flex', justifyContent: 'center', width: '100%'
+                    }}>
+                        <form ref={form} onSubmit={sendEmail} style={{ width: '100%', padding: '4%' }}>
 
-                <form ref={form} onSubmit={sendEmail}>
+                            <input className='contact-email' type="text" name="email" placeholder='Enter your Email' />
 
-                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '2%' }} label="Email" variant="filled" name='email' />
+                            <input className='contact-email' type="text" name="name" placeholder='Enter your Name' />
 
-                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '2%' }} label="Your Name" variant="filled" name='name' />
+                            <input className='contact-email' type="text" name="subject" placeholder='Subject' />
 
-                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '5%' }} label="Subject" variant="filled" name='subject' />
+                            <textarea className='contact-email' name="message" style={{ width: '100%' }} rows="10" placeholder='Write me'>
 
-                    <TextField sx={{ display: 'block', background: '#ffffff', mb: '5%' }} label="Message" variant="outlined" name='message' />
+                            </textarea>
 
-                    <Button variant='contained' sx={{ display: 'block', backgroundColor: '#FE915E' }} type='submit'>
-                        Send Email
-                    </Button>
-                </form>
+                            <Button variant='contained' sx={{ display: 'block', backgroundColor: '#FE915E' }} type='submit'>
+                                Send Email
+                            </Button>
+                        </form>
 
-            </Box>
+                    </Box>
+                </Grid>
+            </Grid>
 
         </Container >
     );

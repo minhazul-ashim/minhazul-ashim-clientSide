@@ -8,6 +8,7 @@ import { FaDownload } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa';
 import Projects from '../../components/Projects/Projects';
 
+
 const Home = () => {
 
     return (

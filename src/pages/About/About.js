@@ -1,4 +1,4 @@
-import { Container, Divider, Grid, List, ListItemText, Typography } from '@mui/material';
+import { Container, Grid, List, ListItemText, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import thumbsup from '../../images/thumb-up-avatar..png'
@@ -10,7 +10,7 @@ const About = () => {
     return (
         <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Grid container>
-                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
                     <Box>
                         <img style={{ width: '90%' }} src={thumbsup} alt="" />
                     </Box>
