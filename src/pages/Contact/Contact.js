@@ -1,9 +1,10 @@
-import { Button, Container, Grid, TextField, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import React, { useRef } from 'react';
 import { Box } from '@mui/system';
 import emailjs from 'emailjs-com';
 import Typewriter from 'typewriter-effect';
 import img from '../../images/64653.jpg'
+import { BsFacebook, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Contact = () => {
 
@@ -23,33 +24,31 @@ const Contact = () => {
     };
 
     return (
-        <Container sx={{ p: '9% 0 5% 0' }}>
+        <Container sx={{ p: '2% 4%' }}>
+            <Box>
+                <Typography variant='h4' sx={{
+                    textAlign: 'center', color: '#999', my: '4%'
+                }}>
+                    <Typewriter
+                        options={{
+                            strings: ['Let\'s get in touch.', 'We will do something amazing!!!', 'Email me'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </Typography>
+            </Box>
             <Grid container>
-
                 <Grid item xs={12} md={6}>
                     <img src={img} style={{ width: '100%', borderRadius: '5px' }} alt="" />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <Box>
-                        <Typography variant='h4' sx={{
-                            textAlign: 'center', color: '#999', mt: {
-                                xs: '2%',
-                                md: '0%'
-                            }
-                        }}>
-                            <Typewriter
-                                options={{
-                                    strings: ['Let\'s get in touch.', 'We will do something amazing!!!', 'Email me'],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
-                        </Typography>
-                    </Box>
                     <Box sx={{
-                        display: 'flex', justifyContent: 'center', width: '100%'
+                        display: 'flex',
+                        justifyContent: 'start',
+                        width: '100%'
                     }}>
-                        <form ref={form} onSubmit={sendEmail} style={{ width: '100%', padding: '4%' }}>
+                        <form ref={form} onSubmit={sendEmail} style={{ width: '100%', padding: '5%' }}>
 
                             <input className='contact-email' type="text" name="email" placeholder='Enter your Email' />
 
@@ -70,6 +69,52 @@ const Contact = () => {
                 </Grid>
             </Grid>
 
+            <Grid container sx={{ my: '5%' }}>
+
+                <Grid item xs={6} md={6} color='#999' p={5}>
+
+                    <Typography variant='h4' my={2}>
+                        Reach me
+                    </Typography>
+
+                    <Typography variant='h6'>
+                        Address: Nandir Haat, Hathazari, Chittagong-4330, Bangladesh
+                    </Typography>
+
+                    <Typography variant='h6'>
+                        Phone: (+880)1620268721
+                    </Typography>
+
+                </Grid>
+
+                <Grid item xs={6} md={6} color='#999' p={5}>
+
+                    <Typography variant='h4' my={2}>
+                        Digital Footprints
+                    </Typography>
+
+                    <Box sx={{
+                        width: {
+                            xs: '100%',
+                            md: '50%'
+                        }, py: '4%', display: 'flex', justifyContent: 'space-around'
+                    }}>
+                        <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://github.com/minhazul-ashim">
+                            <BsGithub style={{ fontSize: '20px' }} />
+                        </a>
+                        <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://facebook.com/minhazulhaque.ashim">
+                            <BsFacebook style={{ fontSize: '20px' }} />
+                        </a>
+                        <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://twitter.com/">
+                            <BsTwitter style={{ fontSize: '20px' }} />
+                        </a>
+                        <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://linkedin.com/in/minhazulhaqueashim">
+                            <BsLinkedin style={{ fontSize: '20px' }} />
+                        </a>
+                    </Box>
+
+                </Grid>
+            </Grid>
         </Container >
     );
 };

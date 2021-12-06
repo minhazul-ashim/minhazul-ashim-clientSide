@@ -65,16 +65,16 @@ export default function Menu({ toggle, setToggle }) {
                 </ListItem>
             </List>
             <Box sx={{ display: 'flex', justifyContent: 'space-around', borderTop: '1px solid #999', py: '4%' }}>
-                <a target='__blank' style={{color: '#999'}} href="https://github.com/minhazul-ashim">
+                <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://github.com/minhazul-ashim">
                     <BsGithub style={{ fontSize: '20px' }} />
                 </a>
-                <a target='__blank' style={{color: '#999'}} href="https://facebook.com/minhazulhaque.ashim">
+                <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://facebook.com/minhazulhaque.ashim">
                     <BsFacebook style={{ fontSize: '20px' }} />
                 </a>
-                <a target='__blank' style={{color: '#999'}} href="https://twitter.com/">
+                <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://twitter.com/">
                     <BsTwitter style={{ fontSize: '20px' }} />
                 </a>
-                <a target='__blank' style={{color: '#999'}} href="https://linkedin.com/in/minhazulhaqueashim">
+                <a className='social-icon' target='__blank' style={{ color: '#999' }} href="https://linkedin.com/in/minhazulhaqueashim">
                     <BsLinkedin style={{ fontSize: '20px' }} />
                 </a>
             </Box>
